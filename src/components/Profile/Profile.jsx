@@ -1,4 +1,4 @@
-import user from 'components/Profile/user.json';
+// import user from 'components/Profile/user.json';
 
 export const Profile = () => {
   return (
