@@ -6,6 +6,7 @@ export const StatisticsSect = styled.section`
   margin-right: auto;
   margin-left: auto;
   width: 360px;
+  border-radius: 8px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 1px rgba(0, 0, 0, 0.8),
     0px 2px 1px rgba(0, 0, 0, 0.9);
 `;

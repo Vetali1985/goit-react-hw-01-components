@@ -6,7 +6,7 @@ export const UserCard = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  /* border: 1px solid; */
+ border-radius: 8px;
   width: 360px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
