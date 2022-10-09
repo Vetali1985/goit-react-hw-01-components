@@ -1,17 +1,5 @@
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-p {
-  display: block;
-  margin: 0 0 10px 0;
-}
-p:last-child {
-  margin-bottom: 0;
-}
-
-.profile {
+import styled from 'styled-components';
+export const UserCard = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -19,44 +7,49 @@ p:last-child {
   margin-right: auto;
   padding-top: 20px;
   /* border: 1px solid; */
-  width: 320px;
+  width: 360px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.description {
+`;
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-content: flex-end;
   align-items: center;
-}
-.avatar {
+`;
+export const Avatar = styled.img`
   margin-bottom: 0;
   border-radius: 50%;
   background-color: aqua;
   width: 150px;
-}
-.stats {
+`;
+export const UserName = styled.p`
+  font-size: 24px;
+  font-weight: 700;
+`;
+export const Stats = styled.ul`
   display: flex;
   flex-wrap: nowrap;
   background-color: lightcyan;
   justify-content: space-around;
   margin-top: 50px;
-}
-.statsItem {
+`;
+export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-basis: calc(100% / 3);
+  height: 80px;
   padding: 10px;
-  border-right: 2px solid lightslategray;
-}
-.statsItem:last-child {
-  border-right: none;
-}
-.quantity {
+  border-right: 1px solid grey;
+  &:last-child{
+    border-right: none; 
+  }
+  }
+`;
+export const Quantity = styled.span`
   font-size: 16px;
   font-weight: 700;
-}
-.name {
-  font-size: 24px;
-  font-weight: 700;
-}
+`;
